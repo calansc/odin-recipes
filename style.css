@@ -1,7 +1,14 @@
+html {
+    box-sizing: border-box;
+  }
+*, *::before, *::after {
+    box-sizing: inherit;
+    /* box-sizing:boarder-box; sets the box size equal to the height:; and width:; that user sets */
+  } 
 * {
     background-color: rgb(51, 51, 51);
     color: white;
-    box-sizing: border-box;
+    
 }
 .title {
     text-align: center;
@@ -9,9 +16,17 @@
     text-decoration: underline;
     font-family: 'serif';
 }
+.recipecontainer {
+    display: flex;
+    justify-content:center;
+    border: 4px solid indigo;
+    gap: 8px;
+}
 .rec {
     font-family: 'sans-serif';
     padding: 10px;
+    /*display: inline;*/    
+    border:2px solid red;
 }
 .home {
     color: orange;
